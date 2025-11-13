@@ -1,0 +1,103 @@
+/* --- Base Styles for SimpleMegaMenu --- */
+.simple-mega-menu {
+  position: absolute; /* Esencial: Posicionamiento relativo al padre (el LI del header) */
+  top: 100%; /* Inicia justo debajo del borde inferior del LI padre */
+  left: 0; /* Alinea a la izquierda del LI padre */
+  width: 100%; /* Ocupa el 100% del ancho del contenedor padre (que suele ser el header) */
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 30px; /* Padding interno general del menú */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra suave para destacarlo */
+  z-index: 1000; /* Asegura que esté por encima de casi todo el contenido */
+  border-top: 2px solid #ff5722; /* Línea superior de color (ej. naranja) */
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+  display: flex; /* Usamos flexbox para centrar y organizar el contenido interno */
+  flex-direction: column; /* Organiza el inner-content y el footer-link verticalmente */
+  align-items: center; /* Centra horizontalmente el contenido si hay max-width */
+}
+
+.simple-mega-menu-inner-content {
+  display: flex; /* Aplica flexbox para organizar las columnas */
+  width: 100%; /* Ocupa todo el ancho disponible dentro de .simple-mega-menu */
+  max-width: 960px; /* Ancho máximo para el contenido de las columnas */
+  margin-bottom: 20px; /* Espacio entre las columnas y el enlace del footer */
+  gap: 40px; /* Espacio entre las columnas */
+  box-sizing: border-box;
+}
+
+.simple-mega-column {
+  flex: 1; /* Cada columna ocupa una parte igual del espacio */
+  min-width: 180px; /* Ancho mínimo para la columna */
+  padding: 0 15px; /* Padding interno para separar contenido */
+  box-sizing: border-box;
+}
+
+/* Separadores visuales entre columnas */
+.simple-mega-column:not(:last-child) {
+  border-right: 1px solid #eee; /* Línea divisoria */
+}
+
+.simple-mega-column h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.simple-mega-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.simple-mega-column ul li {
+  margin-bottom: 8px;
+}
+
+.simple-mega-column ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  display: block; /* Para que toda el área del link sea clicable */
+  padding: 2px 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.simple-mega-column ul li a:hover {
+  color: #ff5722; /* Color de hover (ej. naranja) */
+}
+
+.simple-mega-footer-link {
+  width: 100%;
+  max-width: 960px; /* Coincide con el ancho de las columnas */
+  padding-top: 20px;
+  border-top: 1px solid #eee; /* Línea superior para el footer */
+  text-align: right; /* Alinea el enlace a la derecha */
+  box-sizing: border-box;
+}
+
+.simple-mega-footer-link a {
+  color: #ff5722; /* Color del enlace (ej. naranja) */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease-in-out;
+}
+
+.simple-mega-footer-link a:hover {
+  color: #cc451c; /* Color de hover más oscuro */
+}
+
+
+/* --- Estilos para el encabezado principal (donde se activa el MegaMenú) --- */
+/* Asegúrate de que el LI padre del MegaMenú tenga position: relative; */
+.main-header .main-nav ul li {
+  position: relative; 
+}
+
+/* Estilo para el elemento de navegación activo */
+.main-header .main-nav ul li.active a {
+  color: #ff5722; /* Color del link activo */
+  border-bottom: 2px solid #ff5722; /* Subrayado del link activo */
+  padding-bottom: 10px; /* Espacio para el subrayado */
+}

@@ -1,0 +1,255 @@
+/* ====== ESTILO GENERAL ====== */
+.about-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  font-family: "Inter", "Poppins", sans-serif;
+  color: #222;
+  line-height: 1.6;
+  margin-top: 80px;
+}
+
+.about-wrapper h2, 
+.about-wrapper h3, 
+.about-wrapper h4 {
+  color: #111;
+  font-weight: 600;
+}
+
+/* ====== HERO ====== */
+.about-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-hero h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ====== ESTADÍSTICAS ====== */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.stat-block {
+  background: #f8f9fb;
+  border-radius: 12px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.stat-block h3 {
+  font-size: 2rem;
+  color: #ff5a3c;
+  margin-bottom: 8px;
+}
+
+.stat-block p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ====== GRID (EN CLUSTERS) ====== */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.about-item {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+}
+
+.about-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.about-item h4 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.about-item p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ====== CULTURA ====== */
+.about-culture {
+  text-align: center;
+  background: #f9fafc;
+  border-radius: 16px;
+  padding: 60px 30px;
+  margin-bottom: 80px;
+}
+
+.about-culture h3 {
+  font-size: 1.8rem;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.about-culture p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* ====== CTA ====== */
+.about-cta {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about-cta h4 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.about-cta button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-cta button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ====== WHY CHOOSE ====== */
+.why-choose {
+  background: #fff;
+  padding: 80px 20px;
+  border-top: 1px solid #eee;
+}
+
+.why-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-container h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.why-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.why-item {
+  background: #f8f9fb;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.why-item:hover {
+  background: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.why-item h4 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.why-item p {
+  color: #555;
+}
+
+/* ====== FAQ ====== */
+.faq-section {
+  padding: 80px 20px;
+  background: #f9fafc;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-container h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.faq-item {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.faq-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .about-hero h2 {
+    font-size: 2rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}

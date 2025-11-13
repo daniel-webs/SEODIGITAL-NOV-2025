@@ -1,0 +1,47 @@
+.empresas-section {
+  padding: 4rem 1rem;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+
+.empresas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.empresa-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.empresa-logo {
+  max-width: 120px;
+  max-height: 50px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.empresa-quote {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #444;
+  margin: 0.5rem 0;
+}
+
+.empresa-author {
+  font-size: 0.85rem;
+  color: #888;
+}
+.logo{
+  margin-top: 25x;;
+}

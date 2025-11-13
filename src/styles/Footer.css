@@ -1,0 +1,138 @@
+.footer {
+  background-color: #f7f7f7;
+  color: #1d1d1d;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-contact {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.contact-btn, .call-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-btn {
+  background-color: white;
+  border: 1px solid #6223cc;
+}
+
+.call-btn {
+  background-color: #ff5a1f;
+  color: white;
+}
+
+.phone {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.insight-text {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 12px 0 4px;
+}
+
+.newsletter {
+  display: flex;
+  margin: 8px 0;
+}
+
+.newsletter input {
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.newsletter button {
+  padding: 8px 12px;
+  background-color: #1d1d1d;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.checkbox {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #6223cc;
+}
+
+.social-icons span {
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.grey-background {
+  background-color: #e8eaec; /* Light grey */
+  padding: 20px;
+  border-radius: 4px;
+}

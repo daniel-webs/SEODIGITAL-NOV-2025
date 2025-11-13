@@ -1,0 +1,127 @@
+ .mega-menu {
+  position: fixed;
+  top: 150px; /* Ajusta según la altura de tu header */
+  margin-top: 50px;
+  left: 0;
+  width: 100vw;
+  background: #ffffff;
+  padding: 30px 60px; /* Ajustado el padding para el espaciado general */
+  display: flex;
+  justify-content: center; /* Centra el contenido del menú */
+  z-index: 999;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Asegura que el padding no añada al ancho */
+}
+
+.mega-menu-inner-content {
+  display: flex;
+  width: 100%; /* Ocupa el ancho completo dentro del padding */
+  max-width: 1200px; /* Limita el ancho máximo para que no se extienda demasiado en pantallas grandes */
+  gap: 40px; /* Espacio entre las columnas principales */
+}
+
+.mega-column {
+  flex-basis: 0; /* Permite que flex-grow distribuya el espacio */
+  flex-grow: 1; /* Distribuye el espacio equitativamente */
+  padding: 0 20px; /* Padding interno para las columnas */
+}
+
+.left-column {
+  flex-grow: 1.2; /* Dale un poco más de espacio a la columna izquierda si es necesario */
+  max-width: 300px; /* Mantiene un ancho máximo para la columna izquierda */
+  border-right: 1px solid #eee;
+  padding-right: 40px; /* Ajustado el padding derecho */
+  padding-left: 0; /* Elimina el padding izquierdo extra si existe */
+}
+
+.mega-column h3 {
+  font-size: 24px; /* Ajustado el tamaño de la fuente */
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 25px; /* Ajustado el margen inferior */
+}
+
+.mega-column h4 {
+  font-size: 13px; /* Ajustado el tamaño de la fuente */
+  font-weight: 700; /* Hecho más negrita */
+  color: #555;
+  margin-bottom: 15px;
+  letter-spacing: 0.8px; /* Ajustado el espaciado entre letras */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background: #ff5722;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.mega-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mega-column ul li {
+  margin-bottom: 8px; /* Reducido el margen entre elementos de la lista */
+}
+
+.mega-column ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  transition: 0.3s;
+  display: block; /* Para que el área de clic sea más grande */
+  padding: 2px 0; /* Pequeño padding para los enlaces */
+}
+
+.mega-column ul li a:hover {
+  color: #ff5722;
+}
+
+/* Estilos específicos para los enlaces principales en la columna izquierda */
+.left-column ul li:first-child a {
+  font-size: 16px; /* Más grande para el primer enlace */
+  line-height: 1.4; /* Espaciado de línea para que el texto multilínea se vea mejor */
+  font-weight: 600; /* Más negrita */
+}
+
+.left-column ul li:not(:first-child) a {
+    font-weight: normal; /* Asegura que el resto no esté negrita a menos que se especifique */
+}
+
+
+.client-quote {
+  margin-top: 40px; /* Ajustado el margen superior */
+  font-size: 13px;
+}
+
+.client-quote img {
+  height: 20px; /* Ajusta si tienes una imagen de logo aquí */
+  margin-bottom: 8px;
+}
+
+.client-quote p {
+  color: #555;
+  line-height: 1.5; /* Mejor espaciado de línea */
+}
+
+.client-quote a {
+  color: #ff5722;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Estilo para el enlace "All Solutions →" */
+.mega-column ul li a strong {
+    font-weight: 700; /* Asegura que el "All Solutions" sea negrita */
+}
+
+img.logo {
+  height: 120px; /* Incrementa la altura del logo. Puedes probar con 50px, 60px o lo que mejor se ajuste. */
+  object-fit: contain;
+}

@@ -1,0 +1,59 @@
+.servicios-section {
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin: 0.5rem 0 2rem;
+}
+
+.section-title .highlight {
+  color: #f04a23;
+  font-weight: bold;
+}
+
+.category-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.servicio-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.servicio-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.servicio-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.servicio-card:hover {
+  border-color: #f04a23;
+  box-shadow: 0 4px 12px rgba(240, 74, 35, 0.1);
+}

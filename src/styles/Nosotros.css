@@ -1,0 +1,86 @@
+.about-section {
+  background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+  color: #ffffff;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-header h2 {
+  font-size: 42px;
+  color: #00ffe1;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.about-header .highlight {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.about-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.block {
+  flex: 1 1 300px;
+  background-color: #141414;
+  padding: 30px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 225, 0.1);
+}
+
+.block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 225, 0.2);
+}
+
+.block h3 {
+  font-size: 22px;
+  color: #00ffe1;
+  margin-bottom: 10px;
+}
+
+.block p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.mission, .vision {
+  flex: 1 1 300px;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid #00ffe1;
+}
+
+.mission h3, .vision h3 {
+  font-size: 22px;
+  color: #00ffe1;
+  margin-bottom: 10px;
+}
+
+.mission p, .vision p {
+  font-size: 15px;
+  color: #ccc;
+}

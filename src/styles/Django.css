@@ -1,0 +1,213 @@
+.django-page {
+  font-family: "Inter", "Poppins", sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== HERO ===== */
+.django-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: #f9fafc;
+  flex-wrap: wrap;
+  margin-top: 120px;
+}
+
+.hero-text {
+  flex: 1 1 480px;
+  max-width: 600px;
+}
+
+.hero-text .breadcrumb {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-text .highlight {
+  color: #ff5a3c;
+}
+
+.hero-text .subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background: #ff5a3c;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #e04b2f;
+  transform: translateY(-2px);
+}
+
+.hero-img img {
+  width: 320px;
+  height: auto;
+}
+
+/* ===== LOGOS ===== */
+.trusted-logos {
+  background: #2b2d33;
+  color: white;
+  padding: 20px 10%;
+  text-align: center;
+}
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.logo-bar p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.logos img {
+  height: 28px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.logos img:hover {
+  opacity: 1;
+}
+
+/* ===== SERVICIOS ===== */
+.django-services {
+  padding: 80px 10%;
+  background: white;
+}
+
+.django-services h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  padding: 20px;
+  border-left: 4px solid #ff5a3c;
+  background: #f8f9fb;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.service-item:hover {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transform: translateY(-4px);
+}
+
+.service-item h3 {
+  color: #111;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* ===== WHY CHOOSE ===== */
+.why-django {
+  padding: 80px 10%;
+  background: #f9fafc;
+  text-align: center;
+}
+
+.why-django h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.why-item {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.why-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.why-item h4 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* ===== CTA FINAL ===== */
+.django-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.end-img img {
+  width: 400px;
+  border-radius: 12px;
+}
+
+.end-text {
+  flex: 1 1 400px;
+}
+
+.end-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .django-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    margin-top: 30px;
+  }
+
+  .django-end {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,93 @@
+.process-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 60px;
+  background-color: #f8f9fa;
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.process-image img {
+  max-width: 1000px;
+  height: auto;
+  border-radius: 0;
+  clip-path: polygon(10% 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.process-content {
+  max-width: 600px;
+}
+
+.process-content h2 {
+  font-size: 45px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #6223cc;
+}
+
+.process-content .dot {
+  color: #6223cc;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: #6223cc;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.step-text h4 {
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.step-text h3 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  color: #0c0c9e;
+}
+
+.step-text p {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.cta-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff4c29;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e23e1a;
+}

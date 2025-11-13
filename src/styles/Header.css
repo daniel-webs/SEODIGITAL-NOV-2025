@@ -1,0 +1,149 @@
+/* --- Base Header Styling --- */
+.header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: fixed; /* Asegura que el header siempre esté visible en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Alto z-index para que esté por encima de todo */
+  transition: all 0.3s ease; /* Transición suave para cualquier cambio en el header */
+}
+
+.header-container {
+  max-width: 1200px; /* Ancho máximo del contenido del header */
+  margin: 0 auto; /* Centra el header-container */
+  display: flex;
+  justify-content: space-between; /* Espacia el logo, la navegación y las acciones */
+  align-items: center;
+  padding: 10px 20px; /* Padding interno */
+}
+
+.logo {
+  height: 40px; /* Ajusta el tamaño de tu logo */
+  object-fit: contain; /* Asegura que el logo se ajuste sin distorsionarse */
+}
+
+/* --- Navigation Styling --- */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* Espacio entre los elementos del menú principal */
+  align-items: center; /* Alinea verticalmente los elementos de navegación */
+}
+
+.nav-item {
+  position: relative; /* Clave para posicionar la flecha y para activar el hover/click */
+  padding: 10px 0; /* Padding vertical para el área del clic/hover */
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Alinea el texto y la flecha */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px; /* Ajustado el tamaño de la fuente */
+  display: flex; /* Para permitir que la flecha esté al lado */
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e60023; /* Color rojo al pasar el ratón, como en el botón */
+}
+
+/* Estilo para el elemento de menú activo/abierto */
+.nav-item.active .nav-link {
+  color: #e60023; /* Rojo para el elemento activo */
+  position: relative; /* Necesario para el indicador de subrayado */
+}
+
+/* Indicador de subrayado rojo debajo del elemento activo */
+.nav-item.active .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -13px; /* Posiciona el subrayado debajo del texto del nav-link */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e60023; /* Color rojo del subrayado */
+}
+
+
+/* Flecha para los elementos de menú que abren el megamenú */
+.nav-item:not(:last-child) .nav-link::after { /* Aplica flecha a todos excepto el último (Blog) */
+  content: '▾'; /* Carácter de flecha hacia abajo */
+  font-size: 0.7em;
+  margin-left: 5px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+/* Rotar flecha cuando el menú está activo */
+.nav-item.active .nav-link::after {
+  transform: rotate(180deg); /* Rota la flecha hacia arriba */
+}
+
+/* --- Header Actions (Blog y Botón) --- */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre el enlace del blog y el botón */
+}
+
+.blog-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.blog-link:hover {
+  color: #e60023;
+}
+
+.call-button {
+  background-color: #e60023; /* Rojo */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Bordes ligeramente redondeados */
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Evita que el texto del botón se rompa */
+}
+
+.call-button:hover {
+  background-color: #cc001f; /* Rojo más oscuro al pasar el ratón */
+}
+
+
+/* --- MegaMenu Specific Adjustments (para que se alinee con el header) --- */
+/* Este estilo DEBE ir en tu MegaMenu.css y MegaMenu2.css, no aquí,
+   pero lo incluyo para referencia y ajuste de top */
+
+/* megamenu.css (o el css de tu MegaMenu) */
+.mega-menu {
+  /* ... tus estilos actuales ... */
+  top: 61px; /* AJUSTA ESTO: Altura de tu header (10px top + 40px logo + 10px bottom + 1px border = 61px) */
+  /* ... tus estilos actuales ... */
+}
+
+/* Si tu header-container no tiene el mismo padding horizontal que el mega-menu-inner-content,
+   es posible que debas ajustar el left del mega-menu o el padding del inner-content
+   para que el contenido del megamenú se alinee con el del header. */
+/* Por ejemplo, si el header tiene padding 0 20px, y el megamenú tiene padding 60px: */
+/* .mega-menu {
+    left: 20px;
+    width: calc(100vw - 40px);
+} */
+/* Pero lo que te di anteriormente de width: 100vw y max-width: 1200px para inner-content
+   en el megamenú es mejor para la alineación si el diseño es centrado */

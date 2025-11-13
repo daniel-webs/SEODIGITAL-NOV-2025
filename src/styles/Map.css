@@ -1,0 +1,70 @@
+.locations-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9fbfd;
+}
+
+.locations-title {
+  font-size: 36px;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-family: 'Orbitron', sans-serif; /* Optional futuristic font */
+}
+
+.map-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  filter: brightness(1.05);
+}
+
+/* Pin style */
+.marker {
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -100%);
+}
+
+.pin {
+  width: 20px;
+  height: 20px;
+  background-color: #6223cc;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 10px rgba(208, 92, 214, 0.5);
+  margin: 0 auto 5px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  line-height: 1.3;
+}
+
+/* Marker positions - adjust these as needed */
+.usa {
+  top: 55%;
+  left: 18%;
+}
+
+.spain {
+  top: 53%;
+  left: 44%;
+}
+
+.argentina {
+  top: 88%;
+  left: 32%;
+}
