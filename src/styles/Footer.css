@@ -136,3 +136,164 @@
   padding: 20px;
   border-radius: 4px;
 }
+
+
+  /* --- Media Queries for Responsive Design (Mobile First adjustments for max-width: 768px) --- */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px; /* Ajusta el padding general del footer para móvil */
+  }
+
+  .footer-container {
+    max-width: 100%; /* Permite que el contenedor ocupe todo el ancho disponible */
+  }
+
+  .footer-columns {
+    flex-direction: column; /* Apila las columnas verticalmente */
+    align-items: center; /* Centra las columnas completas horizontalmente */
+    gap: 25px; /* Reduce el espacio entre las columnas apiladas */
+  }
+
+  .footer-column,
+  .footer-contact {
+    flex: none; /* Deshabilita el flex-grow */
+    min-width: unset; /* Resetea el min-width */
+    width: 100%; /* Asegura que cada columna ocupe el ancho completo */
+    text-align: center; /* Centra el texto dentro de la columna */
+  }
+
+  .footer-column h4,
+  .footer-contact h4 {
+    text-align: center; /* Centra los títulos */
+    margin-bottom: 8px; /* Ajusta el margen inferior */
+  }
+
+  .footer-column ul {
+    display: flex; /* Convierte la lista en flexbox para centrar los ítems */
+    flex-direction: column; /* Mantiene los ítems apilados */
+    align-items: center; /* Centra los ítems de la lista */
+    padding: 0; /* Asegúrate de que no haya padding que desplace */
+  }
+
+  .footer-column li {
+    margin-bottom: 4px; /* Reduce el margen inferior */
+    font-size: 15px; /* Ajusta el tamaño de fuente si es necesario */
+  }
+
+  .contact-buttons {
+    flex-direction: column; /* Apila los botones de contacto */
+    align-items: center; /* Centra los botones */
+    gap: 8px; /* Reduce el espacio entre los botones */
+    margin: 15px 0; /* Ajusta el margen */
+  }
+
+  .contact-btn,
+  .call-btn {
+    width: 80%; /* Haz que los botones ocupen un buen ancho */
+    max-width: 250px; /* Limita el ancho máximo para que no sean demasiado grandes */
+    padding: 12px 16px; /* Ajusta el padding */
+    font-size: 15px; /* Ajusta el tamaño de fuente */
+  }
+
+  .phone {
+    text-align: center; /* Centra el número de teléfono */
+    margin: 10px 0;
+    font-size: 16px; /* Haz el número de teléfono un poco más grande */
+  }
+
+  .insight-text {
+    text-align: center; /* Centra el texto de insight */
+    font-size: 14px; /* Ajusta el tamaño de fuente */
+    margin: 15px auto; /* Centra el párrafo */
+    max-width: 90%; /* Limita el ancho para que no sea una línea demasiado larga */
+  }
+
+  .newsletter {
+    flex-direction: column; /* Apila el input y el botón de suscripción */
+    align-items: center; /* Centra los elementos */
+    margin: 15px auto; /* Centra el formulario */
+    width: 90%; /* Ancho del formulario */
+    max-width: 300px; /* Limita el ancho máximo */
+  }
+
+  .newsletter input {
+    width: 100%; /* El input ocupa todo el ancho del formulario */
+    border-radius: 4px; /* Bordes redondeados para el input */
+    margin-bottom: 8px; /* Espacio entre input y botón */
+    text-align: center; /* Centra el texto de placeholder */
+    padding: 10px; /* Ajusta el padding */
+    font-size: 15px;
+  }
+
+  .newsletter button {
+    width: 100%; /* El botón ocupa todo el ancho del formulario */
+    border-radius: 4px; /* Bordes redondeados para el botón */
+    padding: 10px; /* Ajusta el padding */
+    font-size: 15px;
+  }
+
+  .checkbox {
+    display: flex; /* Usa flexbox para alinear el checkbox y el texto */
+    justify-content: center; /* Centra todo el componente del checkbox */
+    align-items: center;
+    font-size: 13px; /* Ajusta el tamaño de fuente */
+    margin-top: 15px; /* Margen superior */
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Apila los elementos de la parte inferior */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Centra el texto */
+    margin-top: 30px; /* Ajusta el margen superior */
+    padding-top: 15px; /* Ajusta el padding superior */
+    gap: 15px; /* Espacio entre los elementos apilados */
+  }
+
+  .footer-bottom p {
+    margin: 0; /* Elimina márgenes extra */
+    font-size: 13px; /* Ajusta el tamaño de fuente */
+  }
+
+  .social-icons {
+    display: flex; /* Convierte los iconos en flexbox */
+    justify-content: center; /* Centra los iconos */
+    gap: 15px; /* Espacio entre los iconos */
+    margin-top: 10px; /* Espacio superior */
+  }
+
+  .social-icons a {
+    font-size: 24px; /* Haz los iconos más grandes */
+  }
+
+  /* Ajustes específicos para el background gris en móvil */
+  .footer-contact.grey-background {
+    padding: 20px 15px; /* Ajusta el padding para móvil */
+  }
+}
+
+/* Pantallas medianas (ej. tablets, entre 769px y 1024px) */
+/* Puedes añadir ajustes aquí si lo necesitas para tablets,
+   pero el objetivo es que el diseño de escritorio se mantenga intacto
+   hasta max-width: 768px. */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Aquí puedes hacer ajustes más sutiles para tablets si es necesario */
+  .footer-columns {
+    gap: 20px; /* Reduce un poco el gap para tablets */
+    justify-content: space-around; /* Distribuir uniformemente */
+  }
+
+  .footer-column,
+  .footer-contact {
+    flex: 1 1 25%; /* Ajusta el flex-basis para que quepan mejor */
+    min-width: unset; /* Elimina el min-width que podría forzar saltos de línea */
+  }
+
+  .footer-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
