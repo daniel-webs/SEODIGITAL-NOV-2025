@@ -21,7 +21,7 @@ export default function Python() {
         <div className="container header-content">
           <div className="header-text">
             <h1 className="main-title">
-              Trabaje con <span className="highlight">expertos en Python</span> en los que confían los mejores equipos tecnológicos del mundo.
+              Trabaje con <span className="highlight">Gustavo Gravagna experto en Python</span> en los que confían los mejores equipos tecnológicos del mundo.
             </h1>
             <p className="subtitle">
               Hemos conectado a más de 500 empresas con desarrolladores senior de Python. 
